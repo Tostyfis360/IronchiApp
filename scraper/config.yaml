@@ -2,17 +2,6 @@
 # Puedes tocar cualquier lista de aquí sin tener que entender el código.
 
 search:
-  # Términos que se usan para consultar las fuentes que aceptan palabras clave
-  # (Jooble, InfoJobs, Job Today, Indeed).
-  keywords:
-    - "dependienta"
-    - "dependiente"
-    - "dependiente moda"
-    - "vendedor tienda ropa"
-    - "vendedora moda"
-    - "retail moda"
-    - "atención al cliente tienda"
-
   cities:
     - name: "La Laguna"
       aliases:
@@ -40,59 +29,124 @@ search:
     - "canarias"
     - "santa cruz de tenerife" # también es el nombre de la provincia
 
-brands:
-  # Marcas de moda gama media/premium que interesan especialmente.
-  # Se comparan en minúsculas y sin acentos contra empresa+título+descripción.
-  priority:
-    - "Zara"
-    - "Mango"
-    - "Bershka"
-    - "Stradivarius"
-    - "Pull & Bear"
-    - "Massimo Dutti"
-    - "Oysho"
-    - "El Corte Inglés"
-    - "Tous"
-    - "Scalpers"
-    - "JD Sports"
-    - "JD Spain Sports Fashion"
-    - "Cortefiel"
-    - "Springfield"
-    - "Women'Secret"
-    - "Kenzo"
-    - "Koala Bay"
-    - "Bouty"
-    - "Levi's"
-    - "Levis"
-    - "Punt Roma"
-    - "Guess"
-    - "Desigual"
+# Cada perfil de búsqueda vive aquí como una "categoría" independiente, con
+# su propia lista de términos de búsqueda, marcas/empresas prioritarias, y
+# palabras clave "señal" que confirman que una oferta de una empresa NO
+# reconocida es igualmente relevante para esa categoría. Añadir una
+# categoría nueva es solo añadir un bloque más aquí; el resto del sistema
+# (scoring, dedupe, la web) funciona igual para todas.
+categories:
+  moda:
+    label: "Moda y retail"
 
-  # Cadenas que NUNCA deben aparecer, aunque encajen por palabra clave o ciudad.
-  excluded:
-    - "Primark"
-    - "Kiabi"
-    - "Lefties"
-    - "C&A"
+    # Términos que se usan para consultar las fuentes que aceptan palabras
+    # clave (InfoJobs, Job Today, Indeed). Jooble usa su propia lista más
+    # corta más abajo (sources.jooble.keywords) para no gastar su cupo.
+    search_keywords:
+      - "dependienta"
+      - "dependiente"
+      - "dependiente moda"
+      - "vendedor tienda ropa"
+      - "vendedora moda"
+      - "retail moda"
+      - "atención al cliente tienda"
 
-# Palabras que indican que una oferta de una empresa NO reconocida como marca
-# de moda (ver brands.priority) es igualmente relevante. Deliberadamente
-# estricto: términos como "dependiente" o "atención al cliente" se quedan
-# fuera porque valen para cualquier comercio (supermercados, kioscos...), no
-# solo moda. Si la empresa SÍ está en brands.priority, esta lista no aplica:
-# se asume que es relevante directamente.
-fashion_keywords:
-  - "moda"
-  - "boutique"
-  - "textil"
-  - "calzado"
-  - "complementos"
-  - "visual merchandising"
-  - "tienda de ropa"
-  - "ventas moda"
-  - "retail moda"
-  - "dependienta de moda"
-  - "vendedor/a de moda"
+    # Marcas de moda gama media/premium que interesan especialmente. Se
+    # comparan en minúsculas y sin acentos contra empresa+título+descripción.
+    priority_brands:
+      - "Zara"
+      - "Mango"
+      - "Bershka"
+      - "Stradivarius"
+      - "Pull & Bear"
+      - "Massimo Dutti"
+      - "Oysho"
+      - "El Corte Inglés"
+      - "Tous"
+      - "Scalpers"
+      - "JD Sports"
+      - "JD Spain Sports Fashion"
+      - "Cortefiel"
+      - "Springfield"
+      - "Women'Secret"
+      - "Kenzo"
+      - "Koala Bay"
+      - "Bouty"
+      - "Levi's"
+      - "Levis"
+      - "Punt Roma"
+      - "Guess"
+      - "Desigual"
+
+    # Cadenas que NUNCA deben aparecer, aunque encajen por palabra clave o ciudad.
+    excluded_brands:
+      - "Primark"
+      - "Kiabi"
+      - "Lefties"
+      - "C&A"
+
+    # Palabras que indican que una oferta de una empresa NO reconocida como
+    # marca prioritaria es igualmente relevante. Deliberadamente estricto:
+    # términos como "dependiente" o "atención al cliente" se quedan fuera
+    # porque valen para cualquier comercio (supermercados, kioscos...), no
+    # solo moda. Si la empresa SÍ está en priority_brands, esta lista no
+    # aplica: se asume que es relevante directamente.
+    signal_keywords:
+      - "moda"
+      - "boutique"
+      - "textil"
+      - "calzado"
+      - "complementos"
+      - "visual merchandising"
+      - "tienda de ropa"
+      - "ventas moda"
+      - "retail moda"
+      - "dependienta de moda"
+      - "vendedor/a de moda"
+
+  audiovisual:
+    label: "Comunicación audiovisual"
+
+    search_keywords:
+      - "redactor"
+      - "redactor multimedia"
+      - "community manager"
+      - "editor de vídeo"
+      - "operador de cámara"
+      - "realizador audiovisual"
+      - "técnico de sonido"
+      - "productor audiovisual"
+      - "diseñador gráfico"
+      - "periodista"
+
+    # Empresas/entidades de referencia en Canarias para este perfil.
+    priority_brands:
+      - "RTVC"
+      - "Radio Televisión Canaria"
+      - "Televisión Pública de Canarias"
+
+    excluded_brands: []
+
+    # Señal de relevancia para empresas no reconocidas (agencias de
+    # comunicación, productoras pequeñas, etc.). Deliberadamente estricto,
+    # igual que en moda: "comunicación" o "redes sociales" sueltos aparecen
+    # como requisito blando en anuncios de cualquier sector, así que solo
+    # cuentan frases específicas o el propio nombre del puesto.
+    signal_keywords:
+      - "audiovisual"
+      - "comunicación audiovisual"
+      - "comunicación digital"
+      - "gabinete de comunicación"
+      - "departamento de comunicación"
+      - "contenidos digitales"
+      - "gestión de redes sociales"
+      - "producción de vídeo"
+      - "producción audiovisual"
+      - "edición de vídeo"
+      - "redactor"
+      - "redactora"
+      - "guion"
+      - "periodis"
 
 contract_type:
   full_time_patterns:
@@ -132,17 +186,18 @@ sources:
     # GitHub Actions), nunca se guarda aquí.
     # La cuenta gratuita tiene un tope de 500 peticiones. Con 2 ciudades x 2
     # keywords x 2 ejecuciones/día son ~240 peticiones al mes, con margen.
-    # Si algún día se sube el límite, se puede ampliar esta lista.
+    # Si algún día se sube el límite, se puede ampliar esta lista (una
+    # búsqueda por categoría es lo mínimo para que Jooble cubra ambas).
     keywords:
       - "dependienta moda"
-      - "vendedor tienda ropa"
+      - "comunicación audiovisual"
   infojobs:
     enabled: true
     # Ciudades donde InfoJobs sí soporta scoping a nivel de municipio en la URL
     # (además de "santa-cruz-de-tenerife", que es la provincia y ya incluye la
-    # capital). El resto de marcas objetivo (Zara, Mango, El Corte Inglés...)
-    # aparecen igualmente en esta búsqueda general por palabra clave, así que
-    # no hace falta un scraper aparte por marca.
+    # capital). Las marcas/empresas de cada categoría aparecen igualmente en
+    # esta búsqueda general por palabra clave, así que no hace falta un
+    # scraper aparte por marca.
     city_slugs:
       - "la-laguna"
       - "santa-cruz-de-tenerife"
@@ -151,4 +206,6 @@ sources:
   indeed:
     enabled: true
   mango_workday:
+    enabled: true
+  rtvc:
     enabled: true

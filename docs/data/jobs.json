@@ -5,6 +5,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -13,11 +15,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/STORE-MANAGER---TENERIFE-CASTILLO-TEEN_JR138560-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 110,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "3f52d4ba7c2bdb11",
@@ -25,6 +27,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "La Laguna",
     "city_match": "exact",
     "location_raw": "LA LAGUNA",
@@ -33,11 +37,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/San-Cristbal-de-La-Laguna-Canary-Islands-Spain/VENDEDOR-A---TENERIFE-LA-LAGUNA_JR134754-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "51bb0d623c7aeae1",
@@ -45,6 +49,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "La Laguna",
     "city_match": "exact",
     "location_raw": "LA LAGUNA",
@@ -53,11 +59,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/San-Cristbal-de-La-Laguna-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-LAGUNA-SC-20H-TARDE--TEMPORAL-_JR127312-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "6206b860ee8095ad",
@@ -65,6 +71,8 @@
     "company": "Springfield Ofertas Tienda",
     "brand_name": "Springfield",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "La Laguna",
     "city_match": "exact",
     "location_raw": "San Cristóbal de La Laguna",
@@ -73,31 +81,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/san-cristobal-de-la-laguna/vendedor-sustitucion-corta-duracion-36h-disp.-horaria-springfield-c.c.-alcampo-laguna-tenerife-laguna/of-i8aebd797a2406b85aca8948da5c2ed",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:31+00:00",
-    "last_seen_at": "2026-08-11T08:17:04+00:00",
+    "first_seen_at": "2026-08-11T09:44:00+00:00",
+    "last_seen_at": "2026-08-11T09:44:00+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
-  },
-  {
-    "id": "cfa5489ee851b39f",
-    "title": "DEPENDIENTE/A LEVIS CC. ALCAMPO (LA LAGUNA) - 20 HORAS SEMANALES - CONTRATO DE SUSTITUCION",
-    "company": "GRUPO NÚMERO 1",
-    "brand_name": "Levis",
-    "brand_tier": "priority",
-    "city": "La Laguna",
-    "city_match": "exact",
-    "location_raw": "San Cristóbal de La Laguna",
-    "contract_type": "part",
-    "salary_raw": null,
-    "source": "infojobs",
-    "url": "https://www.infojobs.net/san-cristobal-de-la-laguna/dependiente-levis-cc.-alcampo-laguna-20-horas-semanales-contrato-sustitucion/of-i3187b63b4b48ab97caac1bb025819f",
-    "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:31+00:00",
-    "last_seen_at": "2026-08-11T08:17:04+00:00",
-    "missed_runs": 0,
-    "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "6e82a5b3940d154e",
@@ -105,6 +93,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -113,11 +103,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/FLOOR-MANAGER-TENERIFE---CASTILLO_JR129597-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "d4816362581961d9",
@@ -125,6 +115,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -133,11 +125,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A---TENERIFE-CASTILLO_JR134755-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "eee9a20153926127",
@@ -145,6 +137,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -153,11 +147,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/DEPENDIENTE-A-TENERIFE-CASTILLO-20H-ROTATIVAS_JR114153-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "50df1701beab8fb2",
@@ -165,6 +159,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -173,11 +169,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VISUAL-MERCHANDISER-LNEA-MAN-TENERIFE-CASTILLO-29_JR125367-2",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "d202d0fcddb40ad3",
@@ -185,6 +181,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -193,11 +191,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-CASTILLO---20H-TARDE-TEMPORAL_JR130930-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "62c39a4d3bc8a140",
@@ -205,6 +203,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -213,11 +213,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-20H-AEROPUERTO-TENERIFE-SUR-CAMPAA-VERANO_JR119872-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5f2c52161a12d8d5",
@@ -225,6 +225,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -233,11 +235,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-CASTILLO-29-ST-30H-ROTATIVAS_JR122267-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "3b2fc5771f306df6",
@@ -245,6 +247,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -253,11 +257,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-CASTILLO-29-ST-20H-TARDE_JR125485-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "6e9a57d21ac964b3",
@@ -265,6 +269,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -273,11 +279,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-ARPTO-TENERIFE-SUR-WN-24H-ROTATIVAS_JR126484-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "2b3ea55c5cfe912b",
@@ -285,6 +291,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -293,11 +301,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-SAN-EUGENIO-SC-OT-38H-TARDE_JR123067-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "50735ba2c19f45e1",
@@ -305,6 +313,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -313,11 +323,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-CASTILLO-48-SC-TEEN-8H-TARDE_JR124947-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "5afa58eadf32867f",
@@ -325,6 +335,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -333,11 +345,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-20H-CAMPAA-VERANO-TENERIFE-CASTILLO-48-ST-TEEN_JR119843-2",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "7ab17f1584575caf",
@@ -345,6 +357,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -353,11 +367,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A-TENERIFE-CASTILLO-48-ST-TEEN-8H-FINES-DE-SEMANA_JR121710-1",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "f05cf52950f48a1a",
@@ -365,6 +379,8 @@
     "company": "Mango",
     "brand_name": "Mango",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -373,31 +389,11 @@
     "source": "mango",
     "url": "https://mango.wd3.myworkdayjobs.com/es/Mango_Work_Your_Passion/job/Santa-Cruz-de-Tenerife-Canary-Islands-Spain/VENDEDOR-A---TENERIFE-CASTILLO-TEEN_JR135415",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:10:17+00:00",
-    "last_seen_at": "2026-08-11T08:18:06+00:00",
+    "first_seen_at": "2026-08-11T09:45:47+00:00",
+    "last_seen_at": "2026-08-11T09:45:47+00:00",
     "missed_runs": 0,
     "score": 93,
-    "is_new": false
-  },
-  {
-    "id": "5d3673163307317b",
-    "title": "Sales Assistant JD Tenerife Añaza",
-    "company": "JD Spain Sports Fashion, SL",
-    "brand_name": "JD Spain Sports Fashion",
-    "brand_tier": "priority",
-    "city": "Santa Cruz de Tenerife",
-    "city_match": "exact",
-    "location_raw": "Santa Cruz de Tenerife",
-    "contract_type": "part",
-    "salary_raw": null,
-    "source": "infojobs",
-    "url": "https://www.infojobs.net/santa-cruz-de-tenerife/sales-assistant-jd-tenerife-anaza/of-i1984f24b254ceda26b048cbc99e32b",
-    "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:48+00:00",
-    "last_seen_at": "2026-08-11T08:17:21+00:00",
-    "missed_runs": 0,
-    "score": 93,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "9e2fbe011159d383",
@@ -405,6 +401,8 @@
     "company": "Koala Bay",
     "brand_name": "Koala Bay",
     "brand_tier": "priority",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Tenerife",
     "city_match": "province",
     "location_raw": "Arona",
@@ -413,11 +411,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/arona/dependiente-tienda-tenerife-sur-39h-temporal/of-i3c1600006a43d2938da742d2754372",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:43+00:00",
-    "last_seen_at": "2026-08-11T08:17:16+00:00",
+    "first_seen_at": "2026-08-11T09:44:28+00:00",
+    "last_seen_at": "2026-08-11T09:44:28+00:00",
     "missed_runs": 0,
     "score": 78,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "14474e3095542aca",
@@ -425,6 +423,8 @@
     "company": "UNOde50",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Santa Cruz de Tenerife",
@@ -433,11 +433,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/santa-cruz-de-tenerife/dependiente-24h-eci-tenerife-temporal/of-i4b878ceb304755b901c0dfbbe42558",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:43+00:00",
-    "last_seen_at": "2026-08-11T08:17:16+00:00",
+    "first_seen_at": "2026-08-11T09:44:28+00:00",
+    "last_seen_at": "2026-08-11T09:44:28+00:00",
     "missed_runs": 0,
     "score": 53,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "512690d5cb2fe1ac",
@@ -445,6 +445,8 @@
     "company": "LA CASA DE LAS CARCASAS.",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "La Laguna",
     "city_match": "exact",
     "location_raw": "San Cristóbal de La Laguna",
@@ -453,11 +455,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/san-cristobal-de-la-laguna/sales-assistant-cc-laguna/of-ia8041d2ac9433cbbf6eb3e081e7a2c",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:31+00:00",
-    "last_seen_at": "2026-08-11T08:17:04+00:00",
+    "first_seen_at": "2026-08-11T09:44:00+00:00",
+    "last_seen_at": "2026-08-11T09:44:00+00:00",
     "missed_runs": 0,
     "score": 45,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "a708aa8b009b0aec",
@@ -465,6 +467,8 @@
     "company": "Mosfashion",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Tenerife",
     "city_match": "province",
     "location_raw": "Adeje",
@@ -473,11 +477,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/adeje/dependiente-moda-tenerife-sur/of-i1eb34e479244179a848cece7c3e63f",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:45+00:00",
-    "last_seen_at": "2026-08-11T08:17:17+00:00",
+    "first_seen_at": "2026-08-11T09:44:29+00:00",
+    "last_seen_at": "2026-08-11T09:44:29+00:00",
     "missed_runs": 0,
     "score": 38,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "ed093447c9b8b716",
@@ -485,6 +489,8 @@
     "company": "GRUPO NÚMERO 1",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Tenerife",
     "city_match": "province",
     "location_raw": "Adeje",
@@ -493,11 +499,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/adeje/dependiente-nueva-apertura-bsoul-marca-moda-deportiva-cc-siam-mall-33-horas-semanales-contrato-indefinido/of-i1b1610ab4f4d4aac80471001bc7660",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:46+00:00",
-    "last_seen_at": "2026-08-11T08:17:19+00:00",
+    "first_seen_at": "2026-08-11T09:44:31+00:00",
+    "last_seen_at": "2026-08-11T09:44:31+00:00",
     "missed_runs": 0,
     "score": 38,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "22d5464420c23d45",
@@ -505,6 +511,8 @@
     "company": "GRUPO NÚMERO 1",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Tenerife",
     "city_match": "province",
     "location_raw": "Adeje",
@@ -513,11 +521,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/adeje/vendedor-20-horas-semanales-nueva-apertura-alma-pena-cc.-siam-mall-sur-tenerife/of-i17c4902d8548f6836a6d827e9b7681",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:49+00:00",
-    "last_seen_at": "2026-08-11T08:17:23+00:00",
+    "first_seen_at": "2026-08-11T09:44:34+00:00",
+    "last_seen_at": "2026-08-11T09:44:34+00:00",
     "missed_runs": 0,
     "score": 38,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "f233bd11ad92ab13",
@@ -525,6 +533,8 @@
     "company": "GRUPO NÚMERO 1",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Tenerife",
     "city_match": "province",
     "location_raw": "La Orotava",
@@ -533,11 +543,11 @@
     "source": "infojobs",
     "url": "https://www.infojobs.net/la-orotava/vendedor-30-horas-semanales-alma-pena-cc.-villa-orotava-contrato-sustitucion/of-ie60c1b3d234cf2afbd428f9603fd60",
     "posted_date": null,
-    "first_seen_at": "2026-08-11T08:09:49+00:00",
-    "last_seen_at": "2026-08-11T08:17:23+00:00",
+    "first_seen_at": "2026-08-11T09:44:34+00:00",
+    "last_seen_at": "2026-08-11T09:44:34+00:00",
     "missed_runs": 0,
     "score": 38,
-    "is_new": false
+    "is_new": true
   },
   {
     "id": "0315523eed287f82",
@@ -545,6 +555,8 @@
     "company": "La Casa Chiquita",
     "brand_name": null,
     "brand_tier": "normal",
+    "category": "moda",
+    "category_label": "Moda y retail",
     "city": "Santa Cruz de Tenerife",
     "city_match": "exact",
     "location_raw": "Sta Cruz",
@@ -553,10 +565,10 @@
     "source": "jobtoday",
     "url": "https://jobtoday.com/es/trabajo/dependiente-a-de-tienda-1nQ973",
     "posted_date": "2026-07-23T17:52:41+00:00",
-    "first_seen_at": "2026-08-11T08:09:54+00:00",
-    "last_seen_at": "2026-08-11T08:17:29+00:00",
+    "first_seen_at": "2026-08-11T09:44:54+00:00",
+    "last_seen_at": "2026-08-11T09:44:54+00:00",
     "missed_runs": 0,
     "score": 38,
-    "is_new": false
+    "is_new": true
   }
 ]

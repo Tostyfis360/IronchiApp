@@ -353,6 +353,7 @@ main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
   padding: 4px 11px;
   border-radius: 999px;
 }
+.tag-category { background: var(--accent-wash); color: var(--accent); }
 .tag-full { background: var(--full-wash); color: var(--full); }
 .tag-part { background: var(--neutral-wash); color: var(--text-soft); }
 .tag-city { background: var(--neutral-wash); color: var(--text-soft); }

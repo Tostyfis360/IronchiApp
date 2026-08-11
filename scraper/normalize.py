@@ -1,11 +1,14 @@
-"""Esquema común de oferta y heurísticas de detección (ciudad, marca, jornada).
+"""Esquema común de oferta y heurísticas de detección (ciudad, categoría,
+marca, jornada).
 
 Cada source module produce jobs pasando por build_job(); si la oferta no
-encaja con la zona objetivo o no parece un puesto de moda/retail, se descarta
-aquí mismo para que los sources no tengan que reimplementar el filtrado.
+encaja con la zona objetivo o no parece relevante para ninguna categoría
+configurada (ver config.yaml -> categories), se descarta aquí mismo para que
+los sources no tengan que reimplementar el filtrado.
 """
 
 import hashlib
+import re
 import unicodedata
 from datetime import datetime, timezone
 
@@ -27,15 +30,25 @@ def _haystack(*texts):
     return normalize_text(" ".join(t for t in texts if t))
 
 
+def _contains_term(haystack, term):
+    """Busca `term` en `haystack` como palabra/frase completa, no como
+    subcadena suelta (para que "Levis" no salte dentro de "televisión", por
+    ejemplo)."""
+    needle = normalize_text(term)
+    if not needle:
+        return False
+    return re.search(r"\b" + re.escape(needle) + r"\b", haystack) is not None
+
+
 def detect_city(*texts):
     cfg = load_config()
     haystack = _haystack(*texts)
     for city in cfg["search"]["cities"]:
         for alias in city["aliases"]:
-            if normalize_text(alias) in haystack:
+            if _contains_term(haystack, alias):
                 return city["name"], "exact"
     for alias in cfg["search"]["province_fallback_aliases"]:
-        if normalize_text(alias) in haystack:
+        if _contains_term(haystack, alias):
             return "Tenerife", "province"
     return None, None
 
@@ -44,30 +57,47 @@ def detect_contract_type(*texts):
     cfg = load_config()
     haystack = _haystack(*texts)
     for pattern in cfg["contract_type"]["part_time_patterns"]:
-        if normalize_text(pattern) in haystack:
+        if _contains_term(haystack, pattern):
             return "part"
     for pattern in cfg["contract_type"]["full_time_patterns"]:
-        if normalize_text(pattern) in haystack:
+        if _contains_term(haystack, pattern):
             return "full"
     return "unknown"
 
 
-def detect_brand(*texts):
+def detect_category(*texts):
+    """Decide a qué categoría (ver config.yaml -> categories) pertenece una
+    oferta, si a alguna.
+
+    Devuelve (category_key, brand_name, brand_tier):
+    - brand_tier == "excluded": la oferta menciona una marca excluida de
+      alguna categoría y debe descartarse siempre, sin importar lo demás.
+    - brand_tier == "priority": coincide con una empresa/marca curada de esa
+      categoría (category_key, brand_name rellenos).
+    - brand_tier == "normal": no hay marca reconocida, pero sí una palabra
+      señal de esa categoría (category_key relleno, brand_name None).
+    - category_key is None: no encaja con ninguna categoría configurada.
+    """
     cfg = load_config()
     haystack = _haystack(*texts)
-    for brand in cfg["brands"]["excluded"]:
-        if normalize_text(brand) in haystack:
-            return brand, "excluded"
-    for brand in cfg["brands"]["priority"]:
-        if normalize_text(brand) in haystack:
-            return brand, "priority"
-    return None, "normal"
+    categories = cfg["categories"]
 
+    for cat_key, cat in categories.items():
+        for brand in cat.get("excluded_brands") or []:
+            if _contains_term(haystack, brand):
+                return None, brand, "excluded"
 
-def matches_fashion_keywords(*texts):
-    cfg = load_config()
-    haystack = _haystack(*texts)
-    return any(normalize_text(k) in haystack for k in cfg["fashion_keywords"])
+    for cat_key, cat in categories.items():
+        for brand in cat.get("priority_brands") or []:
+            if _contains_term(haystack, brand):
+                return cat_key, brand, "priority"
+
+    for cat_key, cat in categories.items():
+        for keyword in cat.get("signal_keywords") or []:
+            if _contains_term(haystack, keyword):
+                return cat_key, None, "normal"
+
+    return None, None, "none"
 
 
 def make_job_id(source, url, title, company):
@@ -82,7 +112,8 @@ def now_iso():
 def build_job(*, source, title, company, url, city_raw=None, description="",
               posted_date=None, salary_raw=None, contract_type_hint=None):
     """Normaliza una oferta cruda de cualquier fuente. Devuelve None si hay
-    que descartarla (marca excluida, fuera de zona, o no parece moda/retail).
+    que descartarla (marca excluida, fuera de zona, o no encaja con ninguna
+    categoría configurada).
     """
     title = (title or "").strip()
     company = (company or "").strip()
@@ -91,22 +122,18 @@ def build_job(*, source, title, company, url, city_raw=None, description="",
 
     texts = [title, company, city_raw or "", description or ""]
 
-    brand_name, brand_tier = detect_brand(*texts)
-    if brand_tier == "excluded":
+    category, brand_name, brand_tier = detect_category(*texts)
+    if brand_tier == "excluded" or category is None:
         return None
 
     city, city_match = detect_city(*texts)
     if city is None:
         return None
 
-    # Si la empresa ya es una marca de moda conocida, nos fiamos de la
-    # curación de config.yaml. Si no, exigimos una señal explícita de moda
-    # para no colar dependientes de supermercado, kioscos, etc.
-    if brand_tier != "priority" and not matches_fashion_keywords(*texts):
-        return None
-
     contract_type = contract_type_hint or detect_contract_type(*texts)
     timestamp = now_iso()
+    cfg = load_config()
+    category_label = cfg["categories"].get(category, {}).get("label", category)
 
     return {
         "id": make_job_id(source, url, title, company),
@@ -114,6 +141,8 @@ def build_job(*, source, title, company, url, city_raw=None, description="",
         "company": company or brand_name or "Empresa sin especificar",
         "brand_name": brand_name,
         "brand_tier": brand_tier,
+        "category": category,
+        "category_label": category_label,
         "city": city,
         "city_match": city_match,
         "location_raw": city_raw or "",

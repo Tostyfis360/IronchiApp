@@ -15,7 +15,7 @@ from config_loader import load_config  # noqa: E402
 from dedupe import dedupe  # noqa: E402
 from merge_store import merge, save  # noqa: E402
 from scoring import score_jobs  # noqa: E402
-from sources import indeed, infojobs, jobtoday, jooble, mango_workday  # noqa: E402
+from sources import indeed, infojobs, jobtoday, jooble, mango_workday, rtvc  # noqa: E402
 from sources.jooble import JoobleNotConfigured  # noqa: E402
 
 STATUS_PATH = pathlib.Path(__file__).parent.parent / "docs" / "data" / "status.json"
@@ -26,6 +26,7 @@ SOURCES = {
     "jobtoday": jobtoday,
     "indeed": indeed,
     "mango": mango_workday,
+    "rtvc": rtvc,
 }
 
 

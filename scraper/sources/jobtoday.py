@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 import requests
 
-from config_loader import load_config
+from config_loader import all_search_keywords, load_config
 from normalize import build_job
 
 BASE_URL = "https://jobtoday.com/es/trabajos-{keyword}/{city}"
@@ -108,7 +108,7 @@ def _parse_items(items):
 
 def fetch():
     cfg = load_config()
-    keywords = cfg["search"]["keywords"]
+    keywords = all_search_keywords(cfg)
     city_slugs = ["la-laguna", "santa-cruz-de-tenerife"]
 
     jobs = []

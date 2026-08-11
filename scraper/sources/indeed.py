@@ -14,7 +14,7 @@ import unicodedata
 import requests
 from bs4 import BeautifulSoup
 
-from config_loader import load_config
+from config_loader import all_search_keywords, load_config
 from normalize import build_job
 
 BASE_URL = "https://es.indeed.com/jobs"
@@ -75,7 +75,7 @@ def _parse_listing(html):
 
 def fetch():
     cfg = load_config()
-    keywords = cfg["search"]["keywords"]
+    keywords = all_search_keywords(cfg)
     cities = [c["name"] for c in cfg["search"]["cities"]]
 
     jobs = []

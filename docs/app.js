@@ -141,9 +141,20 @@ function renderStatus(status) {
 --------------------------------------------------------------------- */
 
 function populateFilters() {
+  const categorySelect = el("filter-category");
   const citySelect = el("filter-city");
   const brandSelect = el("filter-brand");
   const sourceSelect = el("filter-source");
+
+  const categories = [
+    ...new Map(state.jobs.map((j) => [j.category || "moda", j.category_label || "Moda y retail"])),
+  ].sort((a, b) => a[1].localeCompare(b[1]));
+  for (const [value, label] of categories) {
+    const opt = document.createElement("option");
+    opt.value = value;
+    opt.textContent = label;
+    categorySelect.appendChild(opt);
+  }
 
   const cities = [...new Set(state.jobs.map((j) => j.city))].sort();
   for (const city of cities) {
@@ -182,6 +193,7 @@ function populateFilters() {
 
 function applyFilters() {
   const query = normalizeText(el("search").value.trim());
+  const category = el("filter-category").value;
   const city = el("filter-city").value;
   const contract = el("filter-contract").value;
   const brand = el("filter-brand").value;
@@ -190,6 +202,7 @@ function applyFilters() {
 
   let jobs = state.jobs.filter((job) => {
     if (state.discarded.includes(job.id)) return false;
+    if (category && (job.category || "moda") !== category) return false;
     if (city && job.city !== city) return false;
     if (contract && job.contract_type !== contract) return false;
     if (source && job.source !== source) return false;
@@ -221,6 +234,9 @@ function applyFilters() {
 
 function tagsFor(job) {
   const tags = [];
+  tags.push(
+    `<span class="tag tag-category">${escapeHtml(job.category_label || "Moda y retail")}</span>`
+  );
   if (job.contract_type === "full") {
     tags.push(`<span class="tag tag-full">Jornada completa</span>`);
   } else if (job.contract_type === "part") {
@@ -533,7 +549,7 @@ function setMode(mode) {
    Cableado de eventos
 --------------------------------------------------------------------- */
 
-["search", "filter-city", "filter-contract", "filter-brand", "filter-source", "sort"].forEach(
+["search", "filter-category", "filter-city", "filter-contract", "filter-brand", "filter-source", "sort"].forEach(
   (id) => {
     const node = el(id);
     node.addEventListener(id === "search" ? "input" : "change", applyFilters);
