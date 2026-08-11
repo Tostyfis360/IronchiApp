@@ -1,9 +1,15 @@
 """Fuente: InfoJobs — scraping ligero de HTML server-renderizado.
 
 InfoJobs no ofrece una API pública sencilla, pero sus páginas de resultados
-de búsqueda (https://www.infojobs.net/ofertas-trabajo/{keyword}/{ciudad})
-son HTML estático con toda la info necesaria (título, empresa, ubicación,
-tipo de jornada, salario si lo hay), así que no hace falta navegador headless.
+de búsqueda (https://www.infojobs.net/ofertas-trabajo/{ciudad}/{keyword}) son
+HTML estático con toda la info necesaria (título, empresa, ubicación, tipo
+de jornada, salario si lo hay), así que no hace falta navegador headless.
+
+IMPORTANTE: el orden es ciudad primero, palabra clave después. Con el orden
+al revés, InfoJobs ignora la palabra clave silenciosamente y devuelve el
+listado genérico de la ciudad sin filtrar (se detectó probando a mano:
+el campo de búsqueda de la página mostraba la ciudad como si fuera la
+palabra clave introducida).
 
 Esta búsqueda general ya saca ofertas de las marcas objetivo (Zara, Mango,
 El Corte Inglés, Springfield, Koala Bay...) porque InfoJobs es donde la
@@ -20,7 +26,7 @@ from bs4 import BeautifulSoup
 from config_loader import all_search_keywords, load_config
 from normalize import build_job
 
-BASE_URL = "https://www.infojobs.net/ofertas-trabajo/{keyword}/{city}"
+BASE_URL = "https://www.infojobs.net/ofertas-trabajo/{city}/{keyword}"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "

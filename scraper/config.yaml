@@ -23,10 +23,11 @@ search:
 
   # Si una oferta solo menciona la provincia/isla (sin precisar La Laguna o
   # Santa Cruz), igualmente se incluye pero puntúa menos que un match exacto.
+  # Ojo: "canarias"/"islas canarias" NO están aquí a propósito — esas
+  # palabras también valen para Gran Canaria, Lanzarote, Fuerteventura...
+  # (provincia de Las Palmas), así que colarían ofertas de otra isla.
   province_fallback_aliases:
     - "tenerife"
-    - "islas canarias"
-    - "canarias"
     - "santa cruz de tenerife" # también es el nombre de la provincia
 
 # Cada perfil de búsqueda vive aquí como una "categoría" independiente, con

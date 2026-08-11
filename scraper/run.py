@@ -71,6 +71,9 @@ def run():
 
     save(final_jobs)
 
+    status["categories"] = [
+        {"key": key, "label": cat.get("label", key)} for key, cat in cfg["categories"].items()
+    ]
     status["total_jobs"] = len(final_jobs)
     status["new_jobs"] = sum(1 for j in final_jobs if j.get("is_new"))
     STATUS_PATH.parent.mkdir(parents=True, exist_ok=True)

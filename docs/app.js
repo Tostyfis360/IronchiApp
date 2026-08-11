@@ -11,6 +11,7 @@ const STORAGE_KEY = "empleoModaState.v1";
 const state = {
   jobs: [],
   filtered: [],
+  categories: [],
   interested: [],
   discarded: [],
   discoverQueue: [],
@@ -99,7 +100,9 @@ async function loadData() {
   }
 
   if (statusResp.status === "fulfilled" && statusResp.value.ok) {
-    renderStatus(await statusResp.value.json());
+    const status = await statusResp.value.json();
+    state.categories = status.categories || [];
+    renderStatus(status);
   } else {
     el("status-line").textContent =
       "Aún no hay datos: la primera ejecución automática todavía no se ha completado.";
@@ -146,9 +149,17 @@ function populateFilters() {
   const brandSelect = el("filter-brand");
   const sourceSelect = el("filter-source");
 
-  const categories = [
-    ...new Map(state.jobs.map((j) => [j.category || "moda", j.category_label || "Moda y retail"])),
-  ].sort((a, b) => a[1].localeCompare(b[1]));
+  // Preferimos la lista de categorías configuradas (status.json) para que el
+  // filtro las muestre todas aunque una tenga 0 resultados ahora mismo; si no
+  // hay status.json disponible, las deducimos de las ofertas cargadas.
+  const categories = state.categories.length
+    ? state.categories.map((c) => [c.key, c.label])
+    : [
+        ...new Map(
+          state.jobs.map((j) => [j.category || "moda", j.category_label || "Moda y retail"])
+        ),
+      ];
+  categories.sort((a, b) => a[1].localeCompare(b[1]));
   for (const [value, label] of categories) {
     const opt = document.createElement("option");
     opt.value = value;
