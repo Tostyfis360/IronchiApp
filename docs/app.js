@@ -159,37 +159,39 @@ function applyFilters() {
 function jobCard(job) {
   const a = document.createElement("a");
   a.className = "job-card";
+  if (job.contract_type === "full") a.classList.add("is-full");
+  if (job.contract_type === "part") a.classList.add("is-part");
   a.href = job.url;
   a.target = "_blank";
   a.rel = "noopener noreferrer";
 
-  const badges = [];
-  if (job.is_new) badges.push(`<span class="badge badge-new">Nueva</span>`);
-  if (job.contract_type === "full") {
-    badges.push(`<span class="badge badge-full">Jornada completa</span>`);
-  } else if (job.contract_type === "part") {
-    badges.push(`<span class="badge badge-part">Media jornada</span>`);
-  }
+  const companyBits = [escapeHtml(job.company)];
   if (job.brand_tier === "priority") {
-    const brandLabel = job.brand_name && job.brand_name !== job.company ? job.brand_name : "Marca de interés";
-    badges.push(`<span class="badge badge-priority">★ ${escapeHtml(brandLabel)}</span>`);
+    const brandLabel =
+      job.brand_name && job.brand_name !== job.company ? ` · ${escapeHtml(job.brand_name)}` : "";
+    companyBits.push(`<span class="star">★</span>${brandLabel}`);
   }
-  badges.push(`<span class="badge badge-city">${job.city}</span>`);
-  badges.push(
-    `<span class="badge badge-source">${SOURCE_LABELS[job.source] || job.source}</span>`
-  );
+
+  const tags = [];
+  if (job.contract_type === "full") {
+    tags.push(`<span class="tag tag-full">Jornada completa</span>`);
+  } else if (job.contract_type === "part") {
+    tags.push(`<span class="tag tag-part">Media jornada</span>`);
+  }
+  tags.push(`<span class="tag tag-city">${escapeHtml(job.city)}</span>`);
 
   a.innerHTML = `
-    <div class="job-card-top">
+    <div class="card-top">
       <div>
         <p class="job-title">${escapeHtml(job.title)}</p>
-        <p class="job-company">${escapeHtml(job.company)}</p>
+        <p class="job-company">${companyBits.join(" ")}</p>
       </div>
+      ${job.is_new ? `<span class="new-tag">Nueva</span>` : ""}
     </div>
-    <div class="badge-row">${badges.join("")}</div>
-    <div class="job-meta">
-      <span>${escapeHtml(job.location_raw || job.city)}</span>
-      <span class="job-salary">${job.salary_raw ? escapeHtml(job.salary_raw) : ""}</span>
+    <div class="tag-row">${tags.join("")}</div>
+    <div class="card-meta">
+      <span class="place">${escapeHtml(job.location_raw || job.city)} · ${SOURCE_LABELS[job.source] || job.source}</span>
+      <span class="salary">${job.salary_raw ? escapeHtml(job.salary_raw) : ""}</span>
     </div>
   `;
   return a;
