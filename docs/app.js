@@ -189,6 +189,7 @@ function applyFilters() {
   const sortBy = el("sort").value;
 
   let jobs = state.jobs.filter((job) => {
+    if (state.discarded.includes(job.id)) return false;
     if (city && job.city !== city) return false;
     if (contract && job.contract_type !== contract) return false;
     if (source && job.source !== source) return false;
@@ -239,28 +240,45 @@ function companyLineFor(job) {
   return bits.join(" ");
 }
 
-function jobCard(job) {
-  const a = document.createElement("a");
-  a.className = "job-card";
-  a.href = job.url;
-  a.target = "_blank";
-  a.rel = "noopener noreferrer";
+function dismissJob(jobId) {
+  if (!state.discarded.includes(jobId)) state.discarded.push(jobId);
+  const interestedIdx = state.interested.indexOf(jobId);
+  if (interestedIdx !== -1) state.interested.splice(interestedIdx, 1);
+  savePersisted();
+  updateListCounts();
+  applyFilters();
+}
 
-  a.innerHTML = `
-    <div class="card-top">
-      <div>
-        <p class="job-title">${escapeHtml(job.title)}</p>
-        <p class="job-company">${companyLineFor(job)}</p>
+function jobCard(job) {
+  const card = document.createElement("div");
+  card.className = "job-card";
+
+  card.innerHTML = `
+    <a class="job-card-link" href="${job.url}" target="_blank" rel="noopener noreferrer" aria-label="${escapeHtml(job.title)}"></a>
+    <button type="button" class="card-dismiss" title="Descartar, no volver a mostrar">✕</button>
+    <div class="card-body">
+      <div class="card-top">
+        <div>
+          <p class="job-title">${escapeHtml(job.title)}</p>
+          <p class="job-company">${companyLineFor(job)}</p>
+        </div>
+        ${job.is_new ? `<span class="new-tag" title="Nueva desde la última actualización"></span>` : ""}
       </div>
-      ${job.is_new ? `<span class="new-tag" title="Nueva desde la última actualización"></span>` : ""}
-    </div>
-    <div class="tag-row">${tagsFor(job)}</div>
-    <div class="card-meta">
-      <span class="place">${escapeHtml(job.location_raw || job.city)} · ${SOURCE_LABELS[job.source] || job.source}</span>
-      <span class="salary">${job.salary_raw ? escapeHtml(job.salary_raw) : ""}</span>
+      <div class="tag-row">${tagsFor(job)}</div>
+      <div class="card-meta">
+        <span class="place">${escapeHtml(job.location_raw || job.city)} · ${SOURCE_LABELS[job.source] || job.source}</span>
+        <span class="salary">${job.salary_raw ? escapeHtml(job.salary_raw) : ""}</span>
+      </div>
     </div>
   `;
-  return a;
+
+  card.querySelector(".card-dismiss").addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    dismissJob(job.id);
+  });
+
+  return card;
 }
 
 function renderJobs() {
