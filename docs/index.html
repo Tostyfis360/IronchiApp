@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Empleo Moda Tenerife</title>
+<meta name="description" content="Ofertas de dependienta/o en moda en La Laguna y Santa Cruz de Tenerife, actualizadas automáticamente." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👗</text></svg>" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <h1>👗 Empleo Moda <span>Tenerife</span></h1>
+    <p class="subtitle">La Laguna &amp; Santa Cruz de Tenerife · dependienta/o en moda</p>
+  </div>
+</header>
+
+<main>
+  <section class="controls">
+    <input id="search" type="search" placeholder="Buscar por puesto, marca..." aria-label="Buscar" />
+
+    <div class="filter-row">
+      <select id="filter-city" aria-label="Ciudad">
+        <option value="">Todas las ciudades</option>
+      </select>
+      <select id="filter-contract" aria-label="Jornada">
+        <option value="">Cualquier jornada</option>
+        <option value="full">Jornada completa</option>
+        <option value="part">Media jornada</option>
+      </select>
+      <select id="filter-brand" aria-label="Marca">
+        <option value="">Todas las marcas</option>
+      </select>
+      <select id="filter-source" aria-label="Fuente">
+        <option value="">Todas las fuentes</option>
+      </select>
+      <select id="sort" aria-label="Ordenar por">
+        <option value="score">Más relevantes</option>
+        <option value="date">Más recientes</option>
+        <option value="salary">Salario</option>
+      </select>
+    </div>
+  </section>
+
+  <p id="result-count" class="result-count"></p>
+
+  <section id="job-grid" class="job-grid" aria-live="polite"></section>
+
+  <p id="empty-state" class="empty-state" hidden>No hay ofertas que encajen con estos filtros ahora mismo. Prueba a quitar alguno.</p>
+</main>
+
+<footer class="status-footer">
+  <p id="status-line">Cargando estado…</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

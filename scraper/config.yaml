@@ -1,0 +1,148 @@
+# Configuración editable del buscador de empleo.
+# Puedes tocar cualquier lista de aquí sin tener que entender el código.
+
+search:
+  # Términos que se usan para consultar las fuentes que aceptan palabras clave
+  # (Jooble, InfoJobs, Job Today, Indeed).
+  keywords:
+    - "dependienta"
+    - "dependiente"
+    - "dependiente moda"
+    - "vendedor tienda ropa"
+    - "vendedora moda"
+    - "retail moda"
+    - "atención al cliente tienda"
+
+  cities:
+    - name: "La Laguna"
+      aliases:
+        - "la laguna"
+        - "san cristóbal de la laguna"
+        - "san cristobal de la laguna"
+        - "sc de la laguna"
+    - name: "Santa Cruz de Tenerife"
+      aliases:
+        - "santa cruz de tenerife"
+        - "santa cruz tenerife"
+        - "sc de tenerife"
+        - "sta cruz de tenerife"
+        - "s/c de tenerife"
+        - "s.c. de tenerife"
+        - "santa cruz"
+        - "sta cruz"
+        - "sta. cruz"
+
+  # Si una oferta solo menciona la provincia/isla (sin precisar La Laguna o
+  # Santa Cruz), igualmente se incluye pero puntúa menos que un match exacto.
+  province_fallback_aliases:
+    - "tenerife"
+    - "islas canarias"
+    - "canarias"
+    - "santa cruz de tenerife" # también es el nombre de la provincia
+
+brands:
+  # Marcas de moda gama media/premium que interesan especialmente.
+  # Se comparan en minúsculas y sin acentos contra empresa+título+descripción.
+  priority:
+    - "Zara"
+    - "Mango"
+    - "Bershka"
+    - "Stradivarius"
+    - "Pull & Bear"
+    - "Massimo Dutti"
+    - "Oysho"
+    - "El Corte Inglés"
+    - "Tous"
+    - "Scalpers"
+    - "JD Sports"
+    - "JD Spain Sports Fashion"
+    - "Cortefiel"
+    - "Springfield"
+    - "Women'Secret"
+    - "Kenzo"
+    - "Koala Bay"
+    - "Bouty"
+    - "Levi's"
+    - "Levis"
+    - "Punt Roma"
+    - "Guess"
+    - "Desigual"
+
+  # Cadenas que NUNCA deben aparecer, aunque encajen por palabra clave o ciudad.
+  excluded:
+    - "Primark"
+    - "Kiabi"
+    - "Lefties"
+    - "C&A"
+
+# Palabras que indican que una oferta de una empresa NO reconocida como marca
+# de moda (ver brands.priority) es igualmente relevante. Deliberadamente
+# estricto: términos como "dependiente" o "atención al cliente" se quedan
+# fuera porque valen para cualquier comercio (supermercados, kioscos...), no
+# solo moda. Si la empresa SÍ está en brands.priority, esta lista no aplica:
+# se asume que es relevante directamente.
+fashion_keywords:
+  - "moda"
+  - "boutique"
+  - "textil"
+  - "calzado"
+  - "complementos"
+  - "visual merchandising"
+  - "tienda de ropa"
+  - "ventas moda"
+  - "retail moda"
+  - "dependienta de moda"
+  - "vendedor/a de moda"
+
+contract_type:
+  full_time_patterns:
+    - "jornada completa"
+    - "tiempo completo"
+    - "jornada 100%"
+    - "40 horas"
+    - "40h"
+  part_time_patterns:
+    - "media jornada"
+    - "jornada parcial"
+    - "tiempo parcial"
+    - "parcial"
+    - "20 horas"
+    - "20h"
+    - "horas semanales"
+
+scoring:
+  brand_priority: 40
+  full_time: 25
+  part_time: 8
+  city_exact_match: 20
+  province_fallback_match: 5
+  keyword_match: 10
+  recency_max_bonus: 15
+  recency_days_for_zero_bonus: 10
+
+# Si una oferta lleva más de N ejecuciones seguidas sin aparecer en ninguna
+# fuente, se considera caducada/cubierta y se retira del listado activo.
+expiry:
+  max_missed_runs: 3
+
+sources:
+  jooble:
+    enabled: true
+    # La API key se lee de la variable de entorno JOOBLE_API_KEY (secret de
+    # GitHub Actions), nunca se guarda aquí.
+  infojobs:
+    enabled: true
+    # Ciudades donde InfoJobs sí soporta scoping a nivel de municipio en la URL
+    # (además de "santa-cruz-de-tenerife", que es la provincia y ya incluye la
+    # capital). El resto de marcas objetivo (Zara, Mango, El Corte Inglés...)
+    # aparecen igualmente en esta búsqueda general por palabra clave, así que
+    # no hace falta un scraper aparte por marca.
+    city_slugs:
+      - "la-laguna"
+      - "santa-cruz-de-tenerife"
+  jobtoday:
+    enabled: true
+  indeed:
+    enabled: true
+  mango_workday:
+    enabled: true

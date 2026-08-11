@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-08-11T08:17:03+00:00",
+  "sources": {
+    "jooble": {
+      "ok": null,
+      "count": 0,
+      "note": "JOOBLE_API_KEY no configurada (ver README)"
+    },
+    "infojobs": {
+      "ok": true,
+      "count": 37
+    },
+    "jobtoday": {
+      "ok": true,
+      "count": 6
+    },
+    "indeed": {
+      "ok": false,
+      "count": 0,
+      "error": "IndeedBlocked: Indeed bloqueó todas las peticiones (403/anti-bot)."
+    },
+    "mango": {
+      "ok": true,
+      "count": 20
+    }
+  },
+  "total_jobs": 28,
+  "new_jobs": 0
+}
