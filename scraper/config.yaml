@@ -130,6 +130,12 @@ sources:
     enabled: true
     # La API key se lee de la variable de entorno JOOBLE_API_KEY (secret de
     # GitHub Actions), nunca se guarda aquí.
+    # La cuenta gratuita tiene un tope de 500 peticiones. Con 2 ciudades x 2
+    # keywords x 2 ejecuciones/día son ~240 peticiones al mes, con margen.
+    # Si algún día se sube el límite, se puede ampliar esta lista.
+    keywords:
+      - "dependienta moda"
+      - "vendedor tienda ropa"
   infojobs:
     enabled: true
     # Ciudades donde InfoJobs sí soporta scoping a nivel de municipio en la URL

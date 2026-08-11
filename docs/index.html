@@ -5,68 +5,43 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Empleo Moda · Tenerife</title>
 <meta name="description" content="Ofertas de dependienta/o en moda en La Laguna y Santa Cruz de Tenerife, actualizadas automáticamente dos veces al día." />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%238C2A3A'/%3E%3Cpath d='M10 8h9l5 5-9 9-9-9z' fill='none' stroke='%23F0ECE4' stroke-width='1.6' stroke-linejoin='round'/%3E%3Ccircle cx='13.4' cy='11.4' r='1.3' fill='%23F0ECE4'/%3E%3C/svg%3E" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23b3364a'/%3E%3C/svg%3E" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header class="topbar">
-  <div class="topbar-inner">
-    <div class="mark" aria-hidden="true">
-      <svg viewBox="0 0 32 32"><path d="M10 8h9l5 5-9 9-9-9z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="13.4" cy="11.4" r="1.3" fill="currentColor"/></svg>
-    </div>
-    <div>
-      <p class="eyebrow">La Laguna &middot; Santa Cruz de Tenerife</p>
-      <h1>Empleo Moda<span class="accent-dot">.</span></h1>
-      <p class="subtitle">Ofertas de dependienta/o reunidas automáticamente cada mañana y cada tarde.</p>
-    </div>
-  </div>
+  <p class="kicker">La Laguna &middot; Santa Cruz de Tenerife</p>
+  <h1>Empleo en moda</h1>
+  <p class="subtitle">Todas las ofertas de dependienta/o, reunidas cada mañana y cada tarde.</p>
 </header>
 
 <main>
   <section class="controls">
     <div class="search-row">
       <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="14" y1="14" x2="18.5" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      <input id="search" type="search" placeholder="Buscar por puesto o marca…" aria-label="Buscar" />
+      <input id="search" type="search" placeholder="Buscar por puesto o marca" aria-label="Buscar" />
     </div>
 
     <div class="filter-row">
-      <label class="filter-field">
-        <span>Ciudad</span>
-        <select id="filter-city" aria-label="Ciudad">
-          <option value="">Todas</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Jornada</span>
-        <select id="filter-contract" aria-label="Jornada">
-          <option value="">Cualquiera</option>
-          <option value="full">Completa</option>
-          <option value="part">Media</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Marca</span>
-        <select id="filter-brand" aria-label="Marca">
-          <option value="">Todas</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Fuente</span>
-        <select id="filter-source" aria-label="Fuente">
-          <option value="">Todas</option>
-        </select>
-      </label>
-      <label class="filter-field">
-        <span>Orden</span>
-        <select id="sort" aria-label="Ordenar por">
-          <option value="score">Relevancia</option>
-          <option value="date">Recientes</option>
-          <option value="salary">Salario</option>
-        </select>
-      </label>
+      <select id="filter-city" aria-label="Ciudad">
+        <option value="">Ciudad</option>
+      </select>
+      <select id="filter-contract" aria-label="Jornada">
+        <option value="">Jornada</option>
+        <option value="full">Completa</option>
+        <option value="part">Media</option>
+      </select>
+      <select id="filter-brand" aria-label="Marca">
+        <option value="">Marca</option>
+      </select>
+      <select id="filter-source" aria-label="Fuente">
+        <option value="">Fuente</option>
+      </select>
+      <select id="sort" aria-label="Ordenar por">
+        <option value="score">Relevancia</option>
+        <option value="date">Recientes</option>
+        <option value="salary">Salario</option>
+      </select>
     </div>
   </section>
 

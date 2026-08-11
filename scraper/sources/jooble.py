@@ -13,9 +13,9 @@ import requests
 from config_loader import load_config
 from normalize import build_job
 
-API_URL_TEMPLATE = "https://jooble.org/api/{key}"
+API_URL_TEMPLATE = "https://es.jooble.org/api/{key}"
 TIMEOUT = 20
-MAX_CALLS = 10  # tope de llamadas por ejecución para no abusar de la API gratuita
+MAX_CALLS = 6  # tope de llamadas por ejecución (cuenta gratuita: 500/mes en total)
 
 
 class JoobleNotConfigured(Exception):
@@ -28,7 +28,7 @@ def fetch():
         raise JoobleNotConfigured("JOOBLE_API_KEY no está configurada; se omite Jooble.")
 
     cfg = load_config()
-    keywords = cfg["search"]["keywords"]
+    keywords = cfg["sources"]["jooble"].get("keywords") or cfg["search"]["keywords"]
     cities = [c["name"] for c in cfg["search"]["cities"]]
 
     url = API_URL_TEMPLATE.format(key=api_key)

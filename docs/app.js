@@ -159,8 +159,6 @@ function applyFilters() {
 function jobCard(job) {
   const a = document.createElement("a");
   a.className = "job-card";
-  if (job.contract_type === "full") a.classList.add("is-full");
-  if (job.contract_type === "part") a.classList.add("is-part");
   a.href = job.url;
   a.target = "_blank";
   a.rel = "noopener noreferrer";
@@ -186,7 +184,7 @@ function jobCard(job) {
         <p class="job-title">${escapeHtml(job.title)}</p>
         <p class="job-company">${companyBits.join(" ")}</p>
       </div>
-      ${job.is_new ? `<span class="new-tag">Nueva</span>` : ""}
+      ${job.is_new ? `<span class="new-tag" title="Nueva desde la última actualización"></span>` : ""}
     </div>
     <div class="tag-row">${tags.join("")}</div>
     <div class="card-meta">
