@@ -1,7 +1,7 @@
 /* ---------------------------------------------------------------------
-   Empleo Moda Tenerife — minimalista, tipografía del sistema, acento
-   único usado con moderación. Fondo gris muy claro, tarjetas blancas,
-   sin bordes ni divisores decorativos — la jerarquía la da el espacio.
+   Empleo Moda Tenerife — estética Apple: blanco/gris muy claro, tipografía
+   del sistema, un único acento azul usado solo en lo interactivo. Sin
+   tonos cálidos/marrones en ningún sitio.
 --------------------------------------------------------------------- */
 
 :root {
@@ -9,19 +9,21 @@
   --surface: #ffffff;
   --text: #1d1d1f;
   --text-soft: #6e6e73;
-  --text-faint: #a1a1a6;
-  --hairline: rgba(0, 0, 0, 0.06);
+  --text-faint: #86868b;
+  --hairline: rgba(0, 0, 0, 0.07);
 
-  --accent: #b3364a;
-  --accent-wash: #b3364a14;
-  --full: #2f8f5b;
-  --full-wash: #2f8f5b16;
-  --part: #b3821f;
-  --part-wash: #b3821f16;
+  --accent: #0071e3;
+  --accent-wash: #0071e314;
+  --full: #1e8e3e;
+  --full-wash: #1e8e3e16;
+  --neutral-wash: #f0f0f2;
+
+  --like: #ff3b5c;
+  --skip: #86868b;
 
   --shadow-rest: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.1);
-  --radius: 22px;
+  --radius: 20px;
 
   --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto,
     Helvetica, Arial, sans-serif;
@@ -34,14 +36,16 @@
     --text: #f5f5f7;
     --text-soft: #98989d;
     --text-faint: #6e6e73;
-    --hairline: rgba(255, 255, 255, 0.08);
+    --hairline: rgba(255, 255, 255, 0.09);
 
-    --accent: #e3768a;
-    --accent-wash: #e3768a22;
-    --full: #62c98a;
-    --full-wash: #62c98a20;
-    --part: #e0b45a;
-    --part-wash: #e0b45a20;
+    --accent: #2997ff;
+    --accent-wash: #2997ff22;
+    --full: #32d74b;
+    --full-wash: #32d74b1e;
+    --neutral-wash: #2c2c2e;
+
+    --like: #ff375f;
+    --skip: #98989d;
 
     --shadow-rest: 0 1px 2px rgba(0, 0, 0, 0.4);
     --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.55);
@@ -54,14 +58,16 @@
   --text: #f5f5f7;
   --text-soft: #98989d;
   --text-faint: #6e6e73;
-  --hairline: rgba(255, 255, 255, 0.08);
+  --hairline: rgba(255, 255, 255, 0.09);
 
-  --accent: #e3768a;
-  --accent-wash: #e3768a22;
-  --full: #62c98a;
-  --full-wash: #62c98a20;
-  --part: #e0b45a;
-  --part-wash: #e0b45a20;
+  --accent: #2997ff;
+  --accent-wash: #2997ff22;
+  --full: #32d74b;
+  --full-wash: #32d74b1e;
+  --neutral-wash: #2c2c2e;
+
+  --like: #ff375f;
+  --skip: #98989d;
 
   --shadow-rest: 0 1px 2px rgba(0, 0, 0, 0.4);
   --shadow-hover: 0 16px 32px rgba(0, 0, 0, 0.55);
@@ -72,15 +78,17 @@
   --surface: #ffffff;
   --text: #1d1d1f;
   --text-soft: #6e6e73;
-  --text-faint: #a1a1a6;
-  --hairline: rgba(0, 0, 0, 0.06);
+  --text-faint: #86868b;
+  --hairline: rgba(0, 0, 0, 0.07);
 
-  --accent: #b3364a;
-  --accent-wash: #b3364a14;
-  --full: #2f8f5b;
-  --full-wash: #2f8f5b16;
-  --part: #b3821f;
-  --part-wash: #b3821f16;
+  --accent: #0071e3;
+  --accent-wash: #0071e314;
+  --full: #1e8e3e;
+  --full-wash: #1e8e3e16;
+  --neutral-wash: #f0f0f2;
+
+  --like: #ff3b5c;
+  --skip: #86868b;
 
   --shadow-rest: 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-hover: 0 12px 28px rgba(0, 0, 0, 0.1);
@@ -98,6 +106,7 @@ body {
 }
 
 a { color: inherit; }
+button { font-family: var(--font); }
 
 /* ---------------------------------------------------------------------
    Cabecera
@@ -106,7 +115,7 @@ a { color: inherit; }
 .topbar {
   max-width: 720px;
   margin: 0 auto;
-  padding: 72px 24px 40px;
+  padding: 72px 24px 36px;
   text-align: center;
 }
 
@@ -114,7 +123,7 @@ a { color: inherit; }
   margin: 0 0 10px;
   font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   color: var(--accent);
 }
 
@@ -135,17 +144,49 @@ h1 {
 }
 
 /* ---------------------------------------------------------------------
-   Controles
+   Selector Buscar / Descubrir
 --------------------------------------------------------------------- */
 
 main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
+
+.mode-switch {
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  background: var(--neutral-wash);
+  border-radius: 999px;
+  padding: 4px;
+  width: fit-content;
+  margin: 0 auto 28px;
+}
+.mode-btn {
+  border: none;
+  background: transparent;
+  color: var(--text-soft);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.mode-btn.is-active {
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: var(--shadow-rest);
+}
+
+.view[hidden] { display: none; }
+
+/* ---------------------------------------------------------------------
+   Controles (vista Buscar)
+--------------------------------------------------------------------- */
 
 .controls {
   position: sticky;
   top: 0;
   z-index: 5;
   background: var(--bg);
-  padding: 14px 0 16px;
+  padding: 6px 0 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -191,7 +232,7 @@ main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
   font-family: var(--font);
   font-size: 0.86rem;
   font-weight: 500;
-  padding: 9px 34px 9px 16px;
+  padding: 9px 32px 9px 16px;
   border-radius: 999px;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20' fill='none' stroke='%236e6e73' stroke-width='1.6'%3E%3Cpath d='M6 8l4 4 4-4'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -281,8 +322,8 @@ main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
   border-radius: 999px;
 }
 .tag-full { background: var(--full-wash); color: var(--full); }
-.tag-part { background: var(--part-wash); color: var(--part); }
-.tag-city { background: var(--bg); color: var(--text-soft); }
+.tag-part { background: var(--neutral-wash); color: var(--text-soft); }
+.tag-city { background: var(--neutral-wash); color: var(--text-soft); }
 
 .card-meta {
   display: flex;
@@ -310,7 +351,174 @@ main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
 }
 
 /* ---------------------------------------------------------------------
-   Pie de estado
+   Descubrir — pila de tarjetas deslizables
+--------------------------------------------------------------------- */
+
+.discover-lists {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 22px;
+  flex-wrap: wrap;
+}
+.discover-lists[hidden] { display: none; }
+.list-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  border: none;
+  background: var(--surface);
+  box-shadow: var(--shadow-rest);
+  color: var(--text-soft);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; }
+.dot-like { background: var(--like); }
+.dot-skip { background: var(--skip); }
+
+.discover-stack {
+  position: relative;
+  max-width: 420px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.stack-card {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-radius: 28px;
+  box-shadow: var(--shadow-hover);
+  padding: 28px;
+  touch-action: pan-y;
+  cursor: grab;
+  user-select: none;
+  will-change: transform;
+}
+.stack-card:active { cursor: grabbing; }
+.stack-card.is-peek {
+  transform: scale(0.94) translateY(14px);
+  box-shadow: var(--shadow-rest);
+  pointer-events: none;
+  z-index: 1;
+}
+.stack-card.is-top { z-index: 2; }
+
+.stack-card .job-title { font-size: 1.4rem; }
+.stack-card .job-company { font-size: 0.98rem; margin-top: 8px; }
+.stack-card .tag-row { margin-top: 18px; }
+.stack-card .stack-description {
+  margin-top: 18px;
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+.stack-card .card-meta { margin-top: auto; }
+
+.swipe-flag {
+  position: absolute;
+  top: 26px;
+  font-weight: 800;
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  padding: 6px 14px;
+  border-radius: 10px;
+  border: 3px solid currentColor;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.1s linear;
+}
+.swipe-flag-like { right: 22px; color: var(--like); transform: rotate(8deg); }
+.swipe-flag-skip { left: 22px; color: var(--skip); transform: rotate(-8deg); }
+
+.discover-actions {
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+  margin-top: 26px;
+}
+.discover-actions[hidden] { display: none; }
+.round-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background: var(--surface);
+  box-shadow: var(--shadow-hover);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.12s ease;
+}
+.round-btn:hover { transform: translateY(-2px) scale(1.04); }
+.round-btn-skip { color: var(--skip); }
+.round-btn-like { color: var(--like); }
+
+/* ---------------------------------------------------------------------
+   Listas laterales (interesantes / descartadas)
+--------------------------------------------------------------------- */
+
+.side-list { max-width: 640px; margin: 0 auto; }
+.side-list-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+.side-list-header h2 { flex: 1; font-size: 1.15rem; margin: 0; text-align: center; }
+.back-btn, .clear-btn {
+  border: none;
+  background: var(--neutral-wash);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.clear-btn { color: var(--like); }
+
+.side-list-items { display: flex; flex-direction: column; gap: 10px; }
+.side-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 14px 16px;
+  box-shadow: var(--shadow-rest);
+}
+.side-item a {
+  flex: 1;
+  min-width: 0;
+  text-decoration: none;
+}
+.side-item .job-title { font-size: 0.94rem; margin: 0; }
+.side-item .job-company { font-size: 0.8rem; margin: 3px 0 0; }
+.side-item button {
+  flex: none;
+  border: none;
+  background: var(--neutral-wash);
+  color: var(--text-soft);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 7px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+/* ---------------------------------------------------------------------
+   Pie
 --------------------------------------------------------------------- */
 
 .status-footer {
@@ -319,11 +527,15 @@ main { max-width: 1160px; margin: 0 auto; padding: 0 24px 70px; }
   color: var(--text-faint);
   font-size: 0.78rem;
 }
+.manual-links { max-width: 560px; margin: 10px auto 0; line-height: 1.6; }
+.manual-links a { color: var(--accent); text-decoration: none; font-weight: 600; }
+.manual-links a:hover { text-decoration: underline; }
 
 @media (max-width: 480px) {
   .topbar { padding: 52px 20px 32px; }
+  .discover-stack { height: 520px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .job-card { transition: none; }
+  .job-card, .round-btn { transition: none; }
 }

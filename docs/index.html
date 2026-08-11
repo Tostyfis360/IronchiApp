@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Empleo Moda · Tenerife</title>
 <meta name="description" content="Ofertas de dependienta/o en moda en La Laguna y Santa Cruz de Tenerife, actualizadas automáticamente dos veces al día." />
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23b3364a'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%230071e3'/%3E%3C/svg%3E" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -16,44 +16,90 @@
 </header>
 
 <main>
-  <section class="controls">
-    <div class="search-row">
-      <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="14" y1="14" x2="18.5" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-      <input id="search" type="search" placeholder="Buscar por puesto o marca" aria-label="Buscar" />
-    </div>
+  <div class="mode-switch" role="tablist">
+    <button type="button" class="mode-btn" data-mode="search" role="tab" aria-selected="true">Buscar</button>
+    <button type="button" class="mode-btn" data-mode="discover" role="tab" aria-selected="false">Descubrir</button>
+  </div>
 
-    <div class="filter-row">
-      <select id="filter-city" aria-label="Ciudad">
-        <option value="">Ciudad</option>
-      </select>
-      <select id="filter-contract" aria-label="Jornada">
-        <option value="">Jornada</option>
-        <option value="full">Completa</option>
-        <option value="part">Media</option>
-      </select>
-      <select id="filter-brand" aria-label="Marca">
-        <option value="">Marca</option>
-      </select>
-      <select id="filter-source" aria-label="Fuente">
-        <option value="">Fuente</option>
-      </select>
-      <select id="sort" aria-label="Ordenar por">
-        <option value="score">Relevancia</option>
-        <option value="date">Recientes</option>
-        <option value="salary">Salario</option>
-      </select>
-    </div>
+  <section id="view-search" class="view">
+    <section class="controls">
+      <div class="search-row">
+        <svg class="search-icon" viewBox="0 0 20 20" aria-hidden="true"><circle cx="9" cy="9" r="6.5" fill="none" stroke="currentColor" stroke-width="1.6"/><line x1="14" y1="14" x2="18.5" y2="18.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <input id="search" type="search" placeholder="Buscar por puesto o marca" aria-label="Buscar" />
+      </div>
+
+      <div class="filter-row">
+        <select id="filter-city" aria-label="Ciudad">
+          <option value="">Ciudad</option>
+        </select>
+        <select id="filter-contract" aria-label="Jornada">
+          <option value="">Jornada</option>
+          <option value="full">Completa</option>
+          <option value="part">Media</option>
+        </select>
+        <select id="filter-brand" aria-label="Marca">
+          <option value="">Marca</option>
+        </select>
+        <select id="filter-source" aria-label="Fuente">
+          <option value="">Fuente</option>
+        </select>
+        <select id="sort" aria-label="Ordenar por">
+          <option value="score">Relevancia</option>
+          <option value="date">Recientes</option>
+          <option value="salary">Salario</option>
+        </select>
+      </div>
+    </section>
+
+    <p id="result-count" class="result-count"></p>
+
+    <section id="job-grid" class="job-grid" aria-live="polite"></section>
+
+    <p id="empty-state" class="empty-state" hidden>No hay ofertas que encajen con estos filtros ahora mismo. Prueba a quitar alguno.</p>
   </section>
 
-  <p id="result-count" class="result-count"></p>
+  <section id="view-discover" class="view" hidden>
+    <div id="discover-lists" class="discover-lists">
+      <button type="button" id="show-interested" class="list-toggle">
+        <span class="dot dot-like"></span> Interesantes <span id="count-interested">0</span>
+      </button>
+      <button type="button" id="show-discarded" class="list-toggle">
+        <span class="dot dot-skip"></span> Descartadas <span id="count-discarded">0</span>
+      </button>
+    </div>
 
-  <section id="job-grid" class="job-grid" aria-live="polite"></section>
+    <div id="discover-stack" class="discover-stack"></div>
 
-  <p id="empty-state" class="empty-state" hidden>No hay ofertas que encajen con estos filtros ahora mismo. Prueba a quitar alguno.</p>
+    <p id="discover-empty" class="empty-state" hidden>
+      Has revisado todas las ofertas de este filtro. Cambia algo en «Buscar» o vuelve más tarde.
+    </p>
+
+    <div id="discover-actions" class="discover-actions">
+      <button type="button" id="discover-skip" class="round-btn round-btn-skip" aria-label="Descartar">✕</button>
+      <button type="button" id="discover-like" class="round-btn round-btn-like" aria-label="Me interesa">♥</button>
+    </div>
+
+    <div id="side-list" class="side-list" hidden>
+      <div class="side-list-header">
+        <button type="button" id="side-list-back" class="back-btn">&larr; Volver</button>
+        <h2 id="side-list-title"></h2>
+        <button type="button" id="side-list-clear" class="clear-btn">Vaciar</button>
+      </div>
+      <div id="side-list-items" class="side-list-items"></div>
+      <p id="side-list-empty" class="empty-state" hidden></p>
+    </div>
+  </section>
 </main>
 
 <footer class="status-footer">
   <p id="status-line">Cargando estado…</p>
+  <p class="manual-links">
+    Estas dos no las podemos rastrear automáticamente (bloquean el acceso automatizado) —
+    revísalas tú de vez en cuando:
+    <a href="https://www.inditexpeople.com/" target="_blank" rel="noopener noreferrer">Inditex (Zara, Bershka, Stradivarius…)</a>
+    &middot;
+    <a href="https://empleo.elcorteingles.es/" target="_blank" rel="noopener noreferrer">El Corte Inglés</a>
+  </p>
 </footer>
 
 <script src="app.js"></script>
