@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-21T15:24:27+00:00",
+  "generated_at": "2026-08-22T08:34:01+00:00",
   "sources": {
     "jooble": {
       "ok": true,
@@ -7,7 +7,7 @@
     },
     "infojobs": {
       "ok": true,
-      "count": 7
+      "count": 8
     },
     "jobtoday": {
       "ok": true,
@@ -38,5 +38,5 @@
     }
   ],
   "total_jobs": 35,
-  "new_jobs": 0
+  "new_jobs": 2
 }
