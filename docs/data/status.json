@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-08-28T23:47:08+00:00",
+  "generated_at": "2026-08-29T13:42:34+00:00",
   "sources": {
     "jooble": {
       "ok": true,
-      "count": 9
+      "count": 10
     },
     "infojobs": {
       "ok": true,
@@ -37,6 +37,6 @@
       "label": "Comunicación audiovisual"
     }
   ],
-  "total_jobs": 37,
-  "new_jobs": 0
+  "total_jobs": 36,
+  "new_jobs": 1
 }
