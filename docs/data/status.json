@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-08-30T18:17:47+00:00",
+  "generated_at": "2026-08-31T15:58:57+00:00",
   "sources": {
     "jooble": {
       "ok": true,
-      "count": 10
+      "count": 4
     },
     "infojobs": {
       "ok": true,
-      "count": 21
+      "count": 18
     },
     "jobtoday": {
       "ok": true,
@@ -37,6 +37,6 @@
       "label": "Comunicación audiovisual"
     }
   ],
-  "total_jobs": 33,
-  "new_jobs": 0
+  "total_jobs": 37,
+  "new_jobs": 4
 }
