@@ -17,7 +17,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-04T12:37:44+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -39,7 +39,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -61,7 +61,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-09T18:14:03+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -83,7 +83,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-31T15:59:31+00:00",
     "last_seen_at": "2026-09-09T18:12:50+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 95,
     "is_new": false
   },
@@ -105,7 +105,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -127,7 +127,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -149,7 +149,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -171,7 +171,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -193,7 +193,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -215,7 +215,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -237,7 +237,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -259,7 +259,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -281,7 +281,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -303,7 +303,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -325,7 +325,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -347,7 +347,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -369,7 +369,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:49:01+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -391,7 +391,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:49:01+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -413,7 +413,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -435,29 +435,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-09-10T12:48:59+00:00",
-    "missed_runs": 0,
-    "score": 93,
-    "is_new": false
-  },
-  {
-    "id": "695494a450d6a5de",
-    "title": "Sales Assistant JD Tenerife Añaza",
-    "company": "JD Spain Sports Fashion, SL",
-    "brand_name": "JD Spain Sports Fashion",
-    "brand_tier": "priority",
-    "category": "moda",
-    "category_label": "Moda y retail",
-    "city": "Santa Cruz de Tenerife",
-    "city_match": "exact",
-    "location_raw": "Santa Cruz de Tenerife",
-    "contract_type": "part",
-    "salary_raw": null,
-    "source": "infojobs",
-    "url": "https://www.infojobs.net/santa-cruz-de-tenerife/sales-assistant-jd-tenerife-anaza/of-ibc2e991aa444caa9afb40f5cabd36b",
-    "posted_date": null,
-    "first_seen_at": "2026-09-08T12:43:19+00:00",
-    "last_seen_at": "2026-09-08T18:13:01+00:00",
-    "missed_runs": 3,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -478,7 +456,7 @@
     "url": "https://es.jooble.org/jdp/-3608670982223446550",
     "posted_date": "2026-09-10T00:00:00.0000000",
     "first_seen_at": "2026-08-13T09:16:28+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 84,
     "is_new": false
@@ -500,7 +478,7 @@
     "url": "https://es.jooble.org/jdp/-4701123389598957371",
     "posted_date": "2026-09-10T00:00:00.0000000",
     "first_seen_at": "2026-08-25T08:47:39+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 84,
     "is_new": false
@@ -522,7 +500,7 @@
     "url": "https://es.jooble.org/jdp/-101220038134367930",
     "posted_date": "2026-09-10T00:00:00.0000000",
     "first_seen_at": "2026-08-11T15:52:43+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 84,
     "is_new": false
@@ -544,9 +522,9 @@
     "url": "https://es.jooble.org/jdp/8367760144686136980",
     "posted_date": "2026-09-09T00:00:00.0000000",
     "first_seen_at": "2026-08-11T15:52:43+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
-    "score": 83,
+    "score": 82,
     "is_new": false
   },
   {
@@ -566,7 +544,7 @@
     "url": "https://es.jooble.org/jdp/5724318171706100131",
     "posted_date": "2026-09-08T00:00:00.0000000",
     "first_seen_at": "2026-09-02T18:16:06+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 81,
     "is_new": false
@@ -589,29 +567,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-02T12:39:34+00:00",
     "last_seen_at": "2026-09-09T18:12:50+00:00",
-    "missed_runs": 1,
-    "score": 70,
-    "is_new": false
-  },
-  {
-    "id": "3e51017ad75dc1b9",
-    "title": "Dependiente/a de tienda - Troya (Tenerife) - 35h interinidad",
-    "company": "Koala Bay",
-    "brand_name": "Koala Bay",
-    "brand_tier": "priority",
-    "category": "moda",
-    "category_label": "Moda y retail",
-    "city": "Tenerife",
-    "city_match": "province",
-    "location_raw": "Adeje",
-    "contract_type": "unknown",
-    "salary_raw": null,
-    "source": "infojobs",
-    "url": "https://www.infojobs.net/adeje/dependiente-tienda-troya-tenerife-35h-interinidad/of-i3411553e3c469ea879868a68999992",
-    "posted_date": null,
-    "first_seen_at": "2026-09-04T12:36:23+00:00",
-    "last_seen_at": "2026-09-08T18:12:59+00:00",
-    "missed_runs": 3,
+    "missed_runs": 2,
     "score": 70,
     "is_new": false
   },
@@ -633,29 +589,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-01T18:04:54+00:00",
     "last_seen_at": "2026-09-09T18:12:51+00:00",
-    "missed_runs": 1,
-    "score": 53,
-    "is_new": false
-  },
-  {
-    "id": "1c3b052434391032",
-    "title": "SALES ASSISTANT MODA 30H C.C SIAM MALL CONTRATO DE SUSTITUCIÓN",
-    "company": "ONIVERSE",
-    "brand_name": null,
-    "brand_tier": "normal",
-    "category": "moda",
-    "category_label": "Moda y retail",
-    "city": "Santa Cruz de Tenerife",
-    "city_match": "exact",
-    "location_raw": "Santa Cruz de Tenerife",
-    "contract_type": "part",
-    "salary_raw": null,
-    "source": "infojobs",
-    "url": "https://www.infojobs.net/santa-cruz-de-tenerife/sales-assistant-moda-30h-c.c-siam-mall-contrato-sustitucion/of-ic916d902a94b0aa8dd437fa996ee3a",
-    "posted_date": null,
-    "first_seen_at": "2026-08-28T20:05:26+00:00",
-    "last_seen_at": "2026-09-08T18:12:59+00:00",
-    "missed_runs": 3,
+    "missed_runs": 2,
     "score": 53,
     "is_new": false
   },
@@ -677,7 +611,7 @@
     "posted_date": "2026-09-06T06:54:57.2630000",
     "first_seen_at": "2026-09-06T12:01:41+00:00",
     "last_seen_at": "2026-09-09T18:12:20+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 48,
     "is_new": false
   },
@@ -698,7 +632,7 @@
     "url": "https://es.jooble.org/jdp/6429172003134539325",
     "posted_date": "2026-09-08T00:00:00.0000000",
     "first_seen_at": "2026-09-03T12:41:57+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 41,
     "is_new": false
@@ -720,7 +654,7 @@
     "url": "https://es.jooble.org/jdp/6503215235036034822",
     "posted_date": "2026-09-08T00:00:00.0000000",
     "first_seen_at": "2026-09-03T12:41:57+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 41,
     "is_new": false
@@ -742,9 +676,9 @@
     "url": "https://es.jooble.org/jdp/296228651640194804",
     "posted_date": "2026-09-07T00:00:00.0000000",
     "first_seen_at": "2026-08-11T15:52:43+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
-    "score": 40,
+    "score": 39,
     "is_new": false
   },
   {
@@ -765,7 +699,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:10:20+00:00",
     "last_seen_at": "2026-09-09T18:12:26+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 38,
     "is_new": false
   },
@@ -787,7 +721,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-09T12:50:03+00:00",
     "last_seen_at": "2026-09-09T18:12:53+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 38,
     "is_new": false
   },
@@ -809,7 +743,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-07T14:06:25+00:00",
     "last_seen_at": "2026-09-09T18:12:57+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 38,
     "is_new": false
   },
@@ -831,7 +765,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-03T18:16:07+00:00",
     "last_seen_at": "2026-09-09T18:12:57+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 38,
     "is_new": false
   },
@@ -852,7 +786,7 @@
     "url": "https://es.jooble.org/jdp/-3536273568625169206",
     "posted_date": "2026-07-14T00:00:00.0000000",
     "first_seen_at": "2026-09-01T13:16:53+00:00",
-    "last_seen_at": "2026-09-10T12:47:22+00:00",
+    "last_seen_at": "2026-09-10T17:57:48+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false
