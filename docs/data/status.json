@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-26T14:58:12+00:00",
+  "generated_at": "2026-10-26T20:13:56+00:00",
   "sources": {
     "jooble": {
       "ok": true,
@@ -20,7 +20,7 @@
     },
     "mango": {
       "ok": true,
-      "count": 20
+      "count": 19
     },
     "rtvc": {
       "ok": true,
@@ -38,5 +38,5 @@
     }
   ],
   "total_jobs": 37,
-  "new_jobs": 14
+  "new_jobs": 0
 }
