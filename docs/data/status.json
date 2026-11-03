@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-02T22:56:53+00:00",
+  "generated_at": "2026-11-03T15:58:48+00:00",
   "sources": {
     "jooble": {
       "ok": true,
-      "count": 5
+      "count": 7
     },
     "infojobs": {
       "ok": true,
@@ -20,7 +20,7 @@
     },
     "mango": {
       "ok": true,
-      "count": 20
+      "count": 19
     },
     "rtvc": {
       "ok": true,
@@ -37,6 +37,6 @@
       "label": "Comunicación audiovisual"
     }
   ],
-  "total_jobs": 22,
-  "new_jobs": 0
+  "total_jobs": 23,
+  "new_jobs": 2
 }
