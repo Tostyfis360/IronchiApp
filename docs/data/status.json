@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-13T21:06:20+00:00",
+  "generated_at": "2026-11-14T14:52:41+00:00",
   "sources": {
     "jooble": {
       "ok": true,
@@ -11,7 +11,7 @@
     },
     "jobtoday": {
       "ok": true,
-      "count": 7
+      "count": 6
     },
     "indeed": {
       "ok": false,
