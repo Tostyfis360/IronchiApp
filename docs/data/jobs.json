@@ -17,7 +17,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-04T12:37:44+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -39,7 +39,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -61,7 +61,7 @@
     "posted_date": null,
     "first_seen_at": "2026-09-09T18:14:03+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 110,
     "is_new": false
   },
@@ -83,7 +83,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -105,7 +105,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -127,7 +127,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -149,7 +149,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -171,7 +171,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -193,7 +193,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -215,7 +215,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -237,7 +237,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -259,7 +259,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -281,7 +281,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -303,7 +303,7 @@
     "posted_date": null,
     "first_seen_at": "2026-08-11T10:12:10+00:00",
     "last_seen_at": "2026-11-15T20:05:09+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -325,29 +325,7 @@
     "posted_date": "2026-11-14T00:00:00.0000000",
     "first_seen_at": "2026-11-11T15:57:08+00:00",
     "last_seen_at": "2026-11-15T20:03:11+00:00",
-    "missed_runs": 0,
-    "score": 82,
-    "is_new": false
-  },
-  {
-    "id": "4f035b8612d2b295",
-    "title": "Ayudante/a de Realización-Regidor/a (TVPC 009/26) - Televisión Pública de Canarias, S.A. / Sant[...]",
-    "company": "Rtvc",
-    "brand_name": "RTVC",
-    "brand_tier": "priority",
-    "category": "audiovisual",
-    "category_label": "Comunicación audiovisual",
-    "city": "Santa Cruz de Tenerife",
-    "city_match": "exact",
-    "location_raw": "Santa Cruz de Tenerife",
-    "contract_type": "unknown",
-    "salary_raw": null,
-    "source": "jooble",
-    "url": "https://es.jooble.org/jdp/234954892852633502",
-    "posted_date": "2026-11-14T00:00:00.0000000",
-    "first_seen_at": "2026-11-11T15:57:08+00:00",
-    "last_seen_at": "2026-11-15T20:03:11+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 82,
     "is_new": false
   },
@@ -369,8 +347,30 @@
     "posted_date": "2026-11-14T00:00:00.0000000",
     "first_seen_at": "2026-08-11T15:52:43+00:00",
     "last_seen_at": "2026-11-15T20:03:11+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 82,
+    "is_new": false
+  },
+  {
+    "id": "4f035b8612d2b295",
+    "title": "Ayudante/a de Realización-Regidor/a (TVPC 009/26) - Televisión Pública de Canarias, S.A. / Sant[...]",
+    "company": "Rtvc",
+    "brand_name": "RTVC",
+    "brand_tier": "priority",
+    "category": "audiovisual",
+    "category_label": "Comunicación audiovisual",
+    "city": "Santa Cruz de Tenerife",
+    "city_match": "exact",
+    "location_raw": "Santa Cruz de Tenerife",
+    "contract_type": "unknown",
+    "salary_raw": null,
+    "source": "jooble",
+    "url": "https://es.jooble.org/jdp/234954892852633502",
+    "posted_date": "2026-11-14T00:00:00.0000000",
+    "first_seen_at": "2026-11-11T15:57:08+00:00",
+    "last_seen_at": "2026-11-16T18:07:49+00:00",
+    "missed_runs": 0,
+    "score": 81,
     "is_new": false
   },
   {
@@ -391,7 +391,7 @@
     "posted_date": "2026-11-13T00:00:00.0000000",
     "first_seen_at": "2026-11-11T15:57:08+00:00",
     "last_seen_at": "2026-11-15T20:03:11+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 81,
     "is_new": false
   },
@@ -413,7 +413,7 @@
     "posted_date": "2026-11-12T00:00:00.0000000",
     "first_seen_at": "2026-11-12T16:40:21+00:00",
     "last_seen_at": "2026-11-15T20:03:11+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 79,
     "is_new": false
   },
@@ -434,9 +434,9 @@
     "url": "https://jobtoday.com/es/trabajo/dependiente-a-de-tienda-p3gKEb",
     "posted_date": "2026-11-06T06:43:51+00:00",
     "first_seen_at": "2026-09-18T12:49:14+00:00",
-    "last_seen_at": "2026-11-15T20:03:56+00:00",
+    "last_seen_at": "2026-11-16T18:08:30+00:00",
     "missed_runs": 0,
-    "score": 56,
+    "score": 55,
     "is_new": false
   },
   {
@@ -456,9 +456,9 @@
     "url": "https://es.jooble.org/jdp/7470579037432435997",
     "posted_date": "2026-11-09T00:00:00.0000000",
     "first_seen_at": "2026-11-10T16:15:16+00:00",
-    "last_seen_at": "2026-11-15T20:03:11+00:00",
+    "last_seen_at": "2026-11-16T18:07:49+00:00",
     "missed_runs": 0,
-    "score": 35,
+    "score": 33,
     "is_new": false
   },
   {
@@ -478,7 +478,7 @@
     "url": "https://es.jooble.org/jdp/2556303188720863094",
     "posted_date": "2026-09-15T00:00:00.0000000",
     "first_seen_at": "2026-09-16T13:15:58+00:00",
-    "last_seen_at": "2026-11-15T20:03:11+00:00",
+    "last_seen_at": "2026-11-16T18:07:49+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false

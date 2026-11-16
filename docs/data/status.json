@@ -1,9 +1,9 @@
 {
-  "generated_at": "2026-11-15T20:03:07+00:00",
+  "generated_at": "2026-11-16T18:07:45+00:00",
   "sources": {
     "jooble": {
       "ok": true,
-      "count": 10
+      "count": 3
     },
     "infojobs": {
       "ok": true,
@@ -20,7 +20,7 @@
     },
     "mango": {
       "ok": true,
-      "count": 19
+      "count": 0
     },
     "rtvc": {
       "ok": true,
