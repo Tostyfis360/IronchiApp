@@ -1,5 +1,27 @@
 [
   {
+    "id": "c49ee132497745e3",
+    "title": "Ayudante/a de Realización-Regidor/a (TVPC 009/26) - Televisión Pública de Canarias, S.A. / Sant[...]",
+    "company": "Rtvc",
+    "brand_name": "RTVC",
+    "brand_tier": "priority",
+    "category": "audiovisual",
+    "category_label": "Comunicación audiovisual",
+    "city": "Santa Cruz de Tenerife",
+    "city_match": "exact",
+    "location_raw": "Santa Cruz de Tenerife",
+    "contract_type": "unknown",
+    "salary_raw": null,
+    "source": "jooble",
+    "url": "https://es.jooble.org/jdp/2466630280910679131",
+    "posted_date": "2026-11-19T11:40:03.9870000",
+    "first_seen_at": "2026-11-19T17:10:56+00:00",
+    "last_seen_at": "2026-11-19T17:10:56+00:00",
+    "missed_runs": 0,
+    "score": 85,
+    "is_new": true
+  },
+  {
     "id": "4f035b8612d2b295",
     "title": "Ayudante/a de Realización-Regidor/a (TVPC 009/26) - Televisión Pública de Canarias, S.A. / Sant[...]",
     "company": "Rtvc",
@@ -17,7 +39,7 @@
     "posted_date": "2026-11-14T00:00:00.0000000",
     "first_seen_at": "2026-11-11T15:57:08+00:00",
     "last_seen_at": "2026-11-18T22:26:01+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 78,
     "is_new": false
   },
@@ -38,7 +60,7 @@
     "url": "https://jobtoday.com/es/trabajo/dependiente-a-de-tienda-p3gKEb",
     "posted_date": "2026-11-06T06:43:51+00:00",
     "first_seen_at": "2026-09-18T12:49:14+00:00",
-    "last_seen_at": "2026-11-18T22:26:41+00:00",
+    "last_seen_at": "2026-11-19T17:11:37+00:00",
     "missed_runs": 0,
     "score": 55,
     "is_new": false
@@ -60,7 +82,7 @@
     "url": "https://es.jooble.org/jdp/2556303188720863094",
     "posted_date": "2026-09-15T00:00:00.0000000",
     "first_seen_at": "2026-09-16T13:15:58+00:00",
-    "last_seen_at": "2026-11-18T22:26:01+00:00",
+    "last_seen_at": "2026-11-19T17:10:56+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false
@@ -82,7 +104,7 @@
     "url": "https://es.jooble.org/jdp/7470579037432435997",
     "posted_date": "2026-11-09T00:00:00.0000000",
     "first_seen_at": "2026-11-10T16:15:16+00:00",
-    "last_seen_at": "2026-11-18T22:26:01+00:00",
+    "last_seen_at": "2026-11-19T17:10:56+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false
