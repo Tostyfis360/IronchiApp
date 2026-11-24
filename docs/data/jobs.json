@@ -17,7 +17,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:29+00:00",
     "last_seen_at": "2026-11-24T01:58:33+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 93,
     "is_new": false
   },
@@ -38,9 +38,9 @@
     "url": "https://jobtoday.com/es/trabajo/ayudante-a-de-dependiente-a-nKGgZw",
     "posted_date": "2026-11-22T16:09:51+00:00",
     "first_seen_at": "2026-11-22T20:54:07+00:00",
-    "last_seen_at": "2026-11-24T01:58:59+00:00",
+    "last_seen_at": "2026-11-24T19:25:52+00:00",
     "missed_runs": 0,
-    "score": 91,
+    "score": 90,
     "is_new": false
   },
   {
@@ -58,11 +58,11 @@
     "salary_raw": null,
     "source": "jooble",
     "url": "https://es.jooble.org/jdp/2466630280910679131",
-    "posted_date": "2026-11-19T11:40:03.9870000",
+    "posted_date": "2026-11-24T00:00:00.0000000",
     "first_seen_at": "2026-11-19T17:10:56+00:00",
-    "last_seen_at": "2026-11-24T01:57:49+00:00",
+    "last_seen_at": "2026-11-24T19:25:11+00:00",
     "missed_runs": 0,
-    "score": 78,
+    "score": 84,
     "is_new": false
   },
   {
@@ -83,9 +83,9 @@
     "posted_date": null,
     "first_seen_at": "2026-11-24T01:58:24+00:00",
     "last_seen_at": "2026-11-24T01:58:24+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 78,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "6c9b542ff5c4949c",
@@ -105,7 +105,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:29+00:00",
     "last_seen_at": "2026-11-24T01:58:33+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 78,
     "is_new": false
   },
@@ -127,7 +127,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:29+00:00",
     "last_seen_at": "2026-11-24T01:58:33+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 78,
     "is_new": false
   },
@@ -149,7 +149,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:29+00:00",
     "last_seen_at": "2026-11-24T01:58:33+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 78,
     "is_new": false
   },
@@ -171,7 +171,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:22+00:00",
     "last_seen_at": "2026-11-24T01:58:22+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 70,
     "is_new": false
   },
@@ -193,7 +193,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:30+00:00",
     "last_seen_at": "2026-11-24T01:58:35+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 53,
     "is_new": false
   },
@@ -215,7 +215,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:30+00:00",
     "last_seen_at": "2026-11-24T01:58:35+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 53,
     "is_new": false
   },
@@ -237,7 +237,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:45+00:00",
     "last_seen_at": "2026-11-24T01:58:55+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 53,
     "is_new": false
   },
@@ -259,7 +259,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:36+00:00",
     "last_seen_at": "2026-11-23T19:58:36+00:00",
-    "missed_runs": 1,
+    "missed_runs": 2,
     "score": 53,
     "is_new": false
   },
@@ -281,7 +281,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:30+00:00",
     "last_seen_at": "2026-11-24T01:58:35+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 45,
     "is_new": false
   },
@@ -303,7 +303,7 @@
     "posted_date": null,
     "first_seen_at": "2026-11-23T19:58:30+00:00",
     "last_seen_at": "2026-11-24T01:58:29+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 38,
     "is_new": false
   },
@@ -325,9 +325,9 @@
     "posted_date": null,
     "first_seen_at": "2026-11-24T01:58:31+00:00",
     "last_seen_at": "2026-11-24T01:58:31+00:00",
-    "missed_runs": 0,
+    "missed_runs": 1,
     "score": 38,
-    "is_new": true
+    "is_new": false
   },
   {
     "id": "ff6c8632b204074a",
@@ -346,7 +346,7 @@
     "url": "https://es.jooble.org/jdp/2556303188720863094",
     "posted_date": "2026-09-15T00:00:00.0000000",
     "first_seen_at": "2026-09-16T13:15:58+00:00",
-    "last_seen_at": "2026-11-24T01:57:49+00:00",
+    "last_seen_at": "2026-11-24T19:25:11+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false
@@ -368,7 +368,7 @@
     "url": "https://es.jooble.org/jdp/7470579037432435997",
     "posted_date": "2026-11-09T00:00:00.0000000",
     "first_seen_at": "2026-11-10T16:15:16+00:00",
-    "last_seen_at": "2026-11-24T01:57:49+00:00",
+    "last_seen_at": "2026-11-24T19:25:11+00:00",
     "missed_runs": 0,
     "score": 30,
     "is_new": false
